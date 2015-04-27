@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span><b>FÍTO</b></span> | find your fit</a>
+				<a class="navbar-brand" href="../index.html"><span><b>FÍTO</b></span> | find your fit</a>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown">
 						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -109,7 +109,6 @@
 					<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-user"></i>&nbsp; User One<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                             <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
                             <li class="divider"></li>
                             <li><a href="signin.html"><i class="fa fa-power-off"></i> Log Out</a></li>
@@ -125,8 +124,7 @@
 		<ul class="nav menu" style="padding-top: 3em;">
 			<li><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 			<li><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
-			<li class="active"><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>
-			<li><a href="recommendations.html"><span class="glyphicon glyphicon-list-alt"></span> Recommendations</a></li>								
+			<li class="active"><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>						
 		</ul>
 	</div><!--/.sidebar-->
 		
@@ -134,7 +132,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">Shoe Life</li>
+				<li class="active">Dashboard</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -147,65 +145,73 @@
 		<div class="row col-no-gutter-container">
 			<div class="col-xs-6 col-md-3 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">New Orders</div>
+					<div class="panel-heading">REMAINING SHOE LIFE</div>
 					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="80" ><span class="percent">80%</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-3 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Comments</div>
+					<div class="panel-heading">TOTAL DISTANCE</div>
 					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="0" ><span class="prestonpercent">99 <br/>miles</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-3 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">New Users</div>
+					<div class="panel-heading">DAYS WORN</div>
 					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="0" ><span class="prestonpercent">29 <br/>days</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-3 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Visitors</div>
+					<div class="panel-heading">RATE OF USAGE</div>
 					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span>
+						<div class="easypiechart" id="easypiechart-red" data-percent="0" ><span class="prestonpercent">3.4 <br/>miles/day</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->	
 		
-		<div class="row col-no-gutter-container row-margin-top">
-			<div class="col-lg-12 col-no-gutter">
-				<div class="panel panel-default">
-						<div class="panel-heading">
-							<div class="col-md-6" id="daysOwning">Days owning shoe: 69 days</div>
-							<div class="col-md-6" id="distanceMonth">Distance travelled this month</div>
-						</div>
-					<div class="panel-body">
-						<div class="col-md-6"><h3>Testing</h3></div>
-						<div class="col-md-6"><h3>Testing</h3></div>
-							<div class="canvas-wrapper">
-								<canvas height="300" width="600"></canvas>
-							</div>
+		
 
+		<div class="row col-no-gutter-container row-margin-top">
+			<div class="col-md-6 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Recent Activity</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="line-chart" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">FOOT STRIKE</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="polar-chart" height="200" width="600"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
+
+
 		
 		<div class="row row-no-gutter col-no-gutter-container">
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Rate of Usage</div>
+					<div class="panel-heading">Pressure Output</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="chart" id="bar-chart" ></canvas>
@@ -216,17 +222,15 @@
 			
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Foot Strike</div>
+					<div class="panel-heading">Fitment Rating</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="chart" id="bar-chart"></canvas>
+							<canvas class="chart" id="radar-chart" ></canvas>
 						</div>
 					</div>
 				</div>
 			</div><!--/.col-->
-		</div><!--/.row-->
-		
-												
+		</div><!--/.row-->								
 	</div>	<!--/.main-->
 
 	<script src="js/jquery-1.11.1.min.js"></script>
@@ -240,16 +244,25 @@
 	<script>
 	window.onload = function(){ 
 		var chart1 = document.getElementById("line-chart").getContext("2d");
-		window.myLine = new Chart(chart1).Line(lineChartData, {
+		window.myLine = new Chart(chart1).PolarArea(polarData, {
 			responsive : true,  
 			scaleLineColor: "rgba(255,255,255,.2)", 
 			scaleGridLineColor: "rgba(255,255,255,.05)", 
 			scaleFontColor: "#ffffff"
 		});
+
+		var chart3 = document.getElementById("polar-chart").getContext("2d");
+		window.myLine = new Chart(chart3).Doughnut(doughnutData, {
+			responsive : true,  
+			scaleLineColor: "rgba(255,255,255,.2)", 
+			scaleGridLineColor: "rgba(255,255,255,.05)", 
+			scaleFontColor: "#ffffff"
+		});
+
 		var chart2 = document.getElementById("bar-chart").getContext("2d");
 		window.myBar = new Chart(chart2).Bar(barChartData, {
 			responsive : true,  
-			scaleLineColor: "rgba(255,255,255,.2)", 
+			scaleLineColor: "rgba(255,255,255,.2)",
 			scaleGridLineColor: "rgba(255,255,255,.05)", 
 			scaleFontColor: "#ffffff"
 		});

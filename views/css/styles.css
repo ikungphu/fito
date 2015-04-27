@@ -958,6 +958,14 @@ h1.page-header {
 	width: 120px;
 }
 
+.easypiechart .prestonpercent {
+	display: block;
+	position: absolute;
+	font-size: 30px;
+	top: 20px;
+	width: 120px;
+}
+
 #easypiechart-blue .percent { color: #30a5ff;}
 #easypiechart-teal .percent { color: #1ebfae;}
 #easypiechart-orange .percent { color: #ffb53e;}

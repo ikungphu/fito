@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -122,9 +122,9 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">		
 		<ul class="nav menu" style="padding-top: 3em;">
-			<li class="active"><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 			<li><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
-			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>						
+			<li class="active"><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>							
 		</ul>
 	</div><!--/.sidebar-->
 		
@@ -132,79 +132,69 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">Dashboard</li>
+				<li class="active">Shoe Life</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Dashboard</h1>
+				<h1 class="page-header">Shoe Life</h1>
 			</div>
 		</div><!--/.row-->
 		
 		<div class="row col-no-gutter-container">
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-signal glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
-							<div class="text-muted">Steps taken</div>
+			<div class="col-xs-6 col-md-3 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">New Orders</div>
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-orange panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-star-empty glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52/100</div>
-							<div class="text-muted">Fitment rating</div>
+			<div class="col-xs-6 col-md-3 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Comments</div>
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-teal panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-road glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
-							<div class="text-muted">Miles travelled</div>
+			<div class="col-xs-6 col-md-3 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">New Users</div>
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-red panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-fire glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
-							<div class="text-muted">Rate of usage</div>
+			<div class="col-xs-6 col-md-3 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Visitors</div>
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--/.row-->
+		</div><!--/.row-->	
 		
 		<div class="row col-no-gutter-container row-margin-top">
 			<div class="col-lg-12 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Recent Activity</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+						<div class="panel-heading">
+							<div class="col-md-6" id="daysOwning">Days owning shoe: 69 days</div>
+							<div class="col-md-6" id="distanceMonth">Distance travelled this month</div>
 						</div>
+					<div class="panel-body">
+						<div class="col-md-6"><h3>Testing</h3></div>
+						<div class="col-md-6"><h3>Testing</h3></div>
+							<div class="canvas-wrapper">
+								<canvas height="300" width="600"></canvas>
+							</div>
+
 					</div>
 				</div>
 			</div>
@@ -213,7 +203,7 @@
 		<div class="row row-no-gutter col-no-gutter-container">
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Pressure Output</div>
+					<div class="panel-heading">Rate of Usage</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="chart" id="bar-chart" ></canvas>
@@ -224,15 +214,17 @@
 			
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Fitment Rating</div>
+					<div class="panel-heading">Foot Strike</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
-							<canvas class="chart" id="radar-chart" ></canvas>
+							<canvas class="chart" id="bar-chart"></canvas>
 						</div>
 					</div>
 				</div>
 			</div><!--/.col-->
-		</div><!--/.row-->								
+		</div><!--/.row-->
+		
+												
 	</div>	<!--/.main-->
 
 	<script src="js/jquery-1.11.1.min.js"></script>
@@ -255,7 +247,7 @@
 		var chart2 = document.getElementById("bar-chart").getContext("2d");
 		window.myBar = new Chart(chart2).Bar(barChartData, {
 			responsive : true,  
-			scaleLineColor: "rgba(255,255,255,.2)",
+			scaleLineColor: "rgba(255,255,255,.2)", 
 			scaleGridLineColor: "rgba(255,255,255,.05)", 
 			scaleFontColor: "#ffffff"
 		});

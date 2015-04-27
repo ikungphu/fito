@@ -122,118 +122,111 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">		
 		<ul class="nav menu" style="padding-top: 3em;">
-			<li class="active"><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 			<li><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
-			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>						
+			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>					
 		</ul>
 	</div><!--/.sidebar-->
 		
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-		<div class="row">
-			<ol class="breadcrumb">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">Dashboard</li>
-			</ol>
-		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Dashboard</h1>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row col-no-gutter-container">
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-signal glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
-							<div class="text-muted">Steps taken</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-orange panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-star-empty glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52/100</div>
-							<div class="text-muted">Fitment rating</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-teal panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-road glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
-							<div class="text-muted">Miles travelled</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-red panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-fire glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
-							<div class="text-muted">Rate of usage</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row col-no-gutter-container row-margin-top">
-			<div class="col-lg-12 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Recent Activity</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row row-no-gutter col-no-gutter-container">
-			<div class="col-md-6 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Pressure Output</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="bar-chart" ></canvas>
-						</div>
-					</div>
-				</div>
-			</div><!--/.col-->
-			
-			<div class="col-md-6 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Fitment Rating</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="radar-chart" ></canvas>
-						</div>
-					</div>
-				</div>
-			</div><!--/.col-->
-		</div><!--/.row-->								
-	</div>	<!--/.main-->
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="active">Settings</li>
+            </ol>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Settings</h1>
+                <p>This is where you can change the widget layout, account information, and profile picture settings.</p>
+                <br />
+            </div>        
+        </div><!--/.row-->        
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Account Information</div>
+                    <div class="panel-body">
+                        <div class="col-md-10">
+                            <p>This is where you can change your personal profile information related to your account.</p>
+                            <br />
+                            <form role="form">
+
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input class="form-control" placeholder="First and last name">
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="username" class="form-control" placeholder="Your username">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Old password</label>
+                                    <input type="password" class="form-control" placeholder="Your old password">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>New password</label>
+                                    <input type="password" class="form-control" placeholder="Your new password">
+                                </div>                                
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Shoe Information</div>
+                    <div class="panel-body">
+                        <div class="col-md-10">
+                            <p>This is where you change your profile picture.</p>
+                            <br />
+                            <form role="form">                                                                                              
+                                <div class="form-group">
+                                    <label>Change your profile picture</label>
+                                    <input type="file">
+                                </div>                                
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Dashboard Modules</div>
+                    <div class="panel-body">
+                        <div class="col-md-10">
+                            <p>This is where you can rearrange your dashboard modules on main.</p>
+                            <br />
+                            <center>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 panel">sdfsdf</div>                                
+                                    </div>                                
+                                    <div class="row">
+                                        <div class="col-md-3 panel" style="margin-right: 1em">sdfsdf</div>                                
+                                        <div class="col-md-3 panel">sdfsdf</div>                                
+                                    </div>
+                                </div>
+                            </center>
+
+                        </div>                        
+                    </div>
+                </div>
+                <button class="btn btn-default save-changes">Cancel</button>
+                <button class="btn btn-default save-changes">Save changes</button>
+            </div><!-- /.col-->
+        </div><!-- /.row -->
+
+    </div>
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

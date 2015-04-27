@@ -122,9 +122,9 @@
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">		
 		<ul class="nav menu" style="padding-top: 3em;">
-			<li class="active"><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-			<li><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
-			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>						
+			<li><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li class="active"><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
+			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>	
 		</ul>
 	</div><!--/.sidebar-->
 		
@@ -132,79 +132,40 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active">Dashboard</li>
+				<li class="active">Diagnostics</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Dashboard</h1>
+				<h1 class="page-header">Diagnostics</h1>
 			</div>
-		</div><!--/.row-->
-		
-		<div class="row col-no-gutter-container">
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-blue panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-signal glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
-							<div class="text-muted">Steps taken</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-orange panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-star-empty glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52/100</div>
-							<div class="text-muted">Fitment rating</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-teal panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-road glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
-							<div class="text-muted">Miles travelled</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
-				<div class="panel panel-red panel-widget">
-					<div class="row no-padding">
-						<div class="col-sm-3 col-lg-5 widget-left">
-							<em class="glyphicon glyphicon-fire glyphicon-l"></em>
-						</div>
-						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
-							<div class="text-muted">Rate of usage</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
+		</div><!--/.row-->		
 		
 		<div class="row col-no-gutter-container row-margin-top">
 			<div class="col-lg-12 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Recent Activity</div>
+					<div class="panel-heading">Arch Type</div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+						<div class="col-md-4">
+                            <h3>Flat Footed</h3>	
+                            <p>Your arch is either very shallow or completely flat.
+                             Walking without proper arch support can result in a weakened posture and discomfort in your hips and back.</p>
+                             <center>
+                             	<div><img src="img/foot-hardcoded.png"></div>
+                             </center>
 						</div>
+						<div class="col-md-4">
+                            <h3>Feet Dimension Analysis</h3>
+                            <p>Length: 8.9 inches</p>
+                            <p>Width: 4.5 inches</p>
+						</div>
+                        <div class="col-md-4">
+                            <h3>Dimensional Analysis</h3> 
+                            <p>Your feet length to width ratio is <strong>proportionally</strong> accurate to that of a <strong>flat-footed</strong> archetype. 
+                            Information from the pressure sensors indicate that you are <strong>over-utilizing</strong> the <strong>toe box</strong> area in the shoe. 
+                            <strong>Wider shoes</strong> are recommended to accommodate the <strong>width</strong> of your feet.</p>                           
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -213,10 +174,12 @@
 		<div class="row row-no-gutter col-no-gutter-container">
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Pressure Output</div>
+					<div class="panel-heading">Pronation Type</div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="bar-chart" ></canvas>
+						<div class="container-fluid">
+                            <h3>Underpronation</h3>
+                            <p>The <strong>outer or lateral</strong> side of your <strong>heels</strong> takes on the vast majority of shock during regular use. 
+                            This type of pronation delivers a <strong>large mount of shock to your lower leg</strong> and affects <strong>running efficiency</strong>.</p>
 						</div>
 					</div>
 				</div>
@@ -224,15 +187,19 @@
 			
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Fitment Rating</div>
+					<div class="panel-heading">Suggested Shoe Type</div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="radar-chart" ></canvas>
+						<div class="container-fluid">
+                            <h3>Comfort Level 1</h3>
+                            <ul>
+                                <li>Pronation: Use a shoe with outer stability</li>
+                                <li>Foot dimensions: Feet align closely with the standard men's size 9</li>
+                            </ul>
 						</div>
 					</div>
 				</div>
 			</div><!--/.col-->
-		</div><!--/.row-->								
+		</div><!--/.row-->										
 	</div>	<!--/.main-->
 
 	<script src="js/jquery-1.11.1.min.js"></script>
@@ -255,7 +222,7 @@
 		var chart2 = document.getElementById("bar-chart").getContext("2d");
 		window.myBar = new Chart(chart2).Bar(barChartData, {
 			responsive : true,  
-			scaleLineColor: "rgba(255,255,255,.2)",
+			scaleLineColor: "rgba(255,255,255,.2)", 
 			scaleGridLineColor: "rgba(255,255,255,.05)", 
 			scaleFontColor: "#ffffff"
 		});

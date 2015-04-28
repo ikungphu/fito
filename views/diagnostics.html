@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FÍTO | find your fit</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<link href="css/rgba-fallback.css" rel="stylesheet">
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html"><span><b>FÍTO</b></span> | find your fit</a>
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+							<i class="glyphicon glyphicon-envelope"></i>  <span class="label label-danger">2</span>
+						</a>
+						<ul class="dropdown-menu dropdown-messages">
+							<li>
+								<div class="dropdown-messages-box">
+									<a href="profile.html" class="pull-left">
+										<img alt="image" class="img-circle" src="http://placehold.it/40/ccc/fff">
+									</a>
+									<div class="message-body">
+										<small class="pull-right">3 mins ago</small>
+										<a href="#"><strong>John Doe</strong> commented on <strong>your photo</strong>.</a>
+										<br />
+										<small class="text-muted">1:24 pm - 25/03/2015</small>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="dropdown-messages-box">
+									<a href="profile.html" class="pull-left">
+										<img alt="image" class="img-circle" src="http://placehold.it/40/ccc/fff">
+									</a>
+									<div class="message-body">
+										<small class="pull-right">1 hour ago</small>
+										<a href="#">New message from <strong>Jane Doe</strong>.</a>
+										<br />
+										<small class="text-muted">12:27 pm - 25/03/2015</small>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+						
+							<li>
+								<div class="all-button">
+									<a href="#">
+										<em class="glyphicon glyphicon-inbox"></em> <strong>All Messages</strong>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+							<i class="glyphicon glyphicon-bell"></i>  <span class="label label-primary">18</span>
+						</a>
+						<ul class="dropdown-menu dropdown-alerts">
+							<li>
+								<a href="#">
+									<div>
+										<em class="glyphicon glyphicon-envelope"></em> 1 New Message
+										<span class="pull-right text-muted small">3 mins ago</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<div>
+										<em class="glyphicon glyphicon-heart"></em> 12 New Likes
+										<span class="pull-right text-muted small">4 mins ago</span>
+									</div>
+								</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">
+									<div>
+										<em class="glyphicon glyphicon-user"></em> 5 New Followers
+										<span class="pull-right text-muted small">4 mins ago</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-user"></i>&nbsp; User One<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="signin.html"><i class="fa fa-power-off"></i> Log Out</a></li>
+
+                        </ul>
+                    </li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">		
+		<ul class="nav menu" style="padding-top: 3em;">
+			<li><a href="main.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+			<li class="active"><a href="diagnostics.html"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
+			<li><a href="shoe-life.html"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>	
+		</ul>
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">Diagnostics</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Diagnostics</h1>
+			</div>
+		</div><!--/.row-->		
+		
+		<div class="row col-no-gutter-container row-margin-top">
+			<div class="col-lg-12 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Arch Type</div>
+					<div class="panel-body">
+						<div class="col-md-4">
+                            <h3>Flat Footed</h3>	
+                            <p>Your arch is either very shallow or completely flat.
+                             Walking without proper arch support can result in a weakened posture and discomfort in your hips and back.</p>
+                             <center>
+                             	<div><img src="img/foot-hardcoded.png"></div>
+                             </center>
+						</div>
+						<div class="col-md-4">
+                            <h3>Feet Dimension Analysis</h3>
+                            <p>Length: 8.9 inches</p>
+                            <p>Width: 4.5 inches</p>
+						</div>
+                        <div class="col-md-4">
+                            <h3>Dimensional Analysis</h3> 
+                            <p>Your feet length to width ratio is <strong>proportionally</strong> accurate to that of a <strong>flat-footed</strong> archetype. 
+                            Information from the pressure sensors indicate that you are <strong>over-utilizing</strong> the <strong>toe box</strong> area in the shoe. 
+                            <strong>Wider shoes</strong> are recommended to accommodate the <strong>width</strong> of your feet.</p>                           
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row row-no-gutter col-no-gutter-container">
+			<div class="col-md-6 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Pronation Type</div>
+					<div class="panel-body">
+						<div class="container-fluid">
+                            <h3>Underpronation</h3>
+                            <p>The <strong>outer or lateral</strong> side of your <strong>heels</strong> takes on the vast majority of shock during regular use. 
+                            This type of pronation delivers a <strong>large mount of shock to your lower leg</strong> and affects <strong>running efficiency</strong>.</p>
+						</div>
+					</div>
+				</div>
+			</div><!--/.col-->
+			
+			<div class="col-md-6 col-no-gutter">
+				<div class="panel panel-default">
+					<div class="panel-heading">Suggested Shoe Type</div>
+					<div class="panel-body">
+						<div class="container-fluid">
+                            <h3>Comfort Level 1</h3>
+                            <ul>
+                                <li>Pronation: Use a shoe with outer stability</li>
+                                <li>Foot dimensions: Feet align closely with the standard men's size 9</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div><!--/.col-->
+		</div><!--/.row-->										
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+	window.onload = function(){ 
+		var chart1 = document.getElementById("line-chart").getContext("2d");
+		window.myLine = new Chart(chart1).Line(lineChartData, {
+			responsive : true,  
+			scaleLineColor: "rgba(255,255,255,.2)", 
+			scaleGridLineColor: "rgba(255,255,255,.05)", 
+			scaleFontColor: "#ffffff"
+		});
+		var chart2 = document.getElementById("bar-chart").getContext("2d");
+		window.myBar = new Chart(chart2).Bar(barChartData, {
+			responsive : true,  
+			scaleLineColor: "rgba(255,255,255,.2)", 
+			scaleGridLineColor: "rgba(255,255,255,.05)", 
+			scaleFontColor: "#ffffff"
+		});
+		var chart5 = document.getElementById("radar-chart").getContext("2d");
+		window.myRadarChart = new Chart(chart5).Radar(radarData, {
+			responsive : true,
+			scaleLineColor: "rgba(255,255,255,.05)",
+			angleLineColor : "rgba(255,255,255,.2)"
+		});
+		
+	};
+	</script>
+</body>
+
+</html>

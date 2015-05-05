@@ -4,7 +4,7 @@ var shoelifeController = angular.module('shoelifeController', []);
 shoelifeController.controller('shoelifeCtrl', ['$scope', '$http',
 	function($scope, $http) {
 
-var chart1 = document.getElementById("line-chart").getContext("2d");
+		var chart1 = document.getElementById("line-chart").getContext("2d");
 		window.myLine = new Chart(chart1).Line(lineChartData, {
 			responsive : true,  
 			scaleLineColor: "rgba(255,255,255,.2)", 
@@ -18,14 +18,21 @@ var chart1 = document.getElementById("line-chart").getContext("2d");
 			scaleGridLineColor: "rgba(255,255,255,.05)", 
 			scaleFontColor: "#ffffff"
 		});
+
+		var chart3 = document.getElementById("polar-chart").getContext("2d");
+		window.myLine = new Chart(chart3).Doughnut(doughnutData, {
+			responsive : true,  
+			scaleLineColor: "rgba(255,255,255,.2)", 
+			scaleGridLineColor: "rgba(255,255,255,.05)", 
+			scaleFontColor: "#ffffff"
+		});
+		
 		var chart5 = document.getElementById("radar-chart").getContext("2d");
 		window.myRadarChart = new Chart(chart5).Radar(radarData, {
 			responsive : true,
 			scaleLineColor: "rgba(255,255,255,.05)",
 			angleLineColor : "rgba(255,255,255,.2)"
 		});
-
-
 
 
   }]);

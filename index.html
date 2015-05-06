@@ -1,33 +1,187 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>FÍTO | find your fit</title>
-    
-    <link rel="stylesheet" type="text/css" href="views/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="views/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="views/css/local.css" />
 
-    <script type="text/javascript" src="views/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="views/bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- you need to include the shieldui css and js assets in order for the charts to work -->
-    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/shieldui-all.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-    <link id="gridcss" rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/dark-bootstrap/all.min.css" />
+    <title>FÍTO - Find your fit</title>
 
-    <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
-    <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="views/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--<link rel="stylesheet" type="text/css" href="animate.css"/>-->
+    <!-- Custom CSS -->
+    <link href="views/css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="views/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-    <body id="landing">
-        <div class="container main-title landing-center">
-            <h1 class="landing-title"><b>F Í T O</b></h1>
-            <h2 class="landing-subtitle">f i n d &nbsp; y o u r &nbsp; f i t</h2>
-            <a class="btn enter-btn" href="views/signin.html"><b>E N T E R</b></a>
-        </div>  
-    </body>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Team</span> FÍTO
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">F Í T O</h1>
+                        <p style="font-size: 200%;">F I N D &nbsp; Y O U R &nbsp; F I T</p>                    
+                        <button class="btn btn-default"><a href="views/signin.html">E N T E R</a></button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <label>Learn more</label>
+                        <br>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center full about">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Fíto</h2>
+                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="team" class="container content-section text-center full">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Meet the team</h2>
+                <p>As a three man team, we draw our areas of expertise of User Experience, Design, and Development to create a unique dashboard that informs the user to make educated decisions about selecting the right pair of shoes. We are all talented athletes specializing in tennis, basketball, and running.</p>                
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <h3>Daniel Huie</h3>
+                    <img class="img-circle" src="https://scontent-sea.xx.fbcdn.net/hphotos-xap1/t31.0-8/10864052_10205289569389696_4061799980261498947_o.jpg" style="width: 150px; height: 150px;">
+                    <br>
+                    <br>
+                    <p>Daniel is a Second-Year Informatics Student and a Junior at the University of Washington. He is concentrating in Human-Computer Interaction as well as Data Science. Outside of school, his passions are running, exploring the outdoors, and video production. As the lead Front-End Developer for Fíto, he works closely with Kyle and Preston to tie together the Back-End and User Experience processes.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Kyle Yuasa</h3>
+                    <img class="img-circle" src="https://media.licdn.com/media/p/6/005/090/329/315d64f.jpg" style="width: 150px; height: 150px;">
+                    <br>
+                    <br>
+                    <p>Kyle is a Second-Year Informatics Student and a Junior at the University of Washington. He is concentrating in Cybersecurity. Outside of school, he enjoys rock climbing, basketball, and hanging out with friends. As lead Back-end Engineer, he makes sure everything from the servers to data aggregation run smoothly.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Preston Dang</h3>
+                    <img class="img-circle" src="https://media.licdn.com/media/AAEAAQAAAAAAAAFXAAAAJDM2OTY5OTNmLTAwNTgtNGVmNS1iMDI2LWVmNjJmNDkzOWJmOQ.jpg" style="width: 150px; height: 150px;">
+                    <br>
+                    <br>
+                    <p>Preston is a Second-year Informatics Student and a Senior at the University of Washington. He is concentrating in Human-Computer Interaction. Outside of school, he is involved in Wushu and Basketball. As the lead User Experience Designer, he is in charge of making sure that the application offers a unique and pleasing browsing experience.</p>
+                </div>                    
+            </div>
+        </div>
+    </section>    
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center full contact">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Team Fíto</h2>
+                <p>Feel free to email us to provide some feedback on our dashboard, data analysis, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">contact@fito.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>                    
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Fíto 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="views/js/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="views/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
 </html>

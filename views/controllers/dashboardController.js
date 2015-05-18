@@ -26,7 +26,9 @@ dashboardController.controller('dashboardCtrl', ['$scope', '$http',
 		angleLineColor : "rgba(255,255,255,.2)"
 	});
 
-
+	$http.get('/users').success(function(response) {
+		console.log(response);
+	});
 
 
 

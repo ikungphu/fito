@@ -4,7 +4,9 @@ var fitoApp = angular.module('fitoApp', [
   'diagnosticsController',
   'shoelifeController',
   'recommendationsController',
-  'settingsController'
+  'settingsController',
+  'loginController',
+  'registerController'
 ]);
 
 fitoApp.config(['$routeProvider',
@@ -31,6 +33,14 @@ fitoApp.config(['$routeProvider',
           when('/settings', {
         templateUrl: 'partials/settings.html',
         controller: 'settingsCtrl'
+      }).
+          when('/login', {
+        templateUrl: 'partials/login.html',
+        controller: 'loginCtrl'
+      }).
+          when('/register', {
+        templateUrl: 'partials/register.html',
+        controller: 'registerCtrl'
       }).
       otherwise({
         redirectTo: '/dashboard'

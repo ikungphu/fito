@@ -1,9 +1,10 @@
 var dashboardController = angular.module('dashboardController', []);
 
 
-dashboardController.controller('dashboardCtrl', ['$scope', '$http',
-  function($scope, $http) {
+dashboardController.controller('dashboardCtrl', ['$scope', '$http', '$rootScope',
+  function($scope, $http, $rootScope) {
     
+    $rootScope.dashboard = true;
 
   	var chart1 = document.getElementById("line-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {

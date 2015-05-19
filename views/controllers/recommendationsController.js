@@ -1,10 +1,10 @@
 var recommendationsController = angular.module('recommendationsController', []);
 
 
-recommendationsController.controller('recommendationsCtrl', ['$scope', '$http',
-  function($scope, $http) {
+recommendationsController.controller('recommendationsCtrl', ['$scope', '$http', '$rootScope',
+  function($scope, $http, $rootScope) {
     
-
+  	$rootScope.dashboard = true;
   		
 	var chart1 = document.getElementById("line-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {

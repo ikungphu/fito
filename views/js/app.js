@@ -46,3 +46,15 @@ fitoApp.config(['$routeProvider',
         redirectTo: '/dashboard'
       });
   }]);
+
+/*
+fitoApp.controller("mainController", function($scope, $http, $location, $rootScope) {
+    alert($location.url());
+    //alert(JSON.stringify($location));
+    if ($location.url() == '/login' || $location.url() == '/register') {
+        $scope.dashboard = false;
+    } else {
+        $scope.dashboard = true;
+    }
+});
+*/

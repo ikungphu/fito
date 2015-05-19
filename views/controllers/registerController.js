@@ -1,11 +1,11 @@
 var registerController = angular.module('registerController', []);
 
 
-registerController.controller('registerCtrl', ['$scope', '$http',
-  function($scope, $http) {
+registerController.controller('registerCtrl', ['$scope', '$http', '$rootScope',
+  function($scope, $http, $rootScope) {
 
-
-  	console.log("hello world from login");
+  	$rootScope.dashboard = false;
+  	console.log("hello world from register");
 
 
   

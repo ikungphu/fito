@@ -1,6 +1,6 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<br>
-		<br>
+		<br>		
 		
 		<div class="row col-no-gutter-container">
 			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
@@ -11,11 +11,16 @@
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
 							<div class="large">120</div>
-							<div class="text-muted">Steps taken</div>
-						</div>
+							<div class="text-muted">Steps taken &nbsp;
+								<a title="This feature analyzes the total number of steps taken so far." class="hint">
+									<span class="glyphicon glyphicon-question-sign" title="More"></span>
+								</a>
+							</div>							
+						</div>						
 					</div>
 				</div>
-			</div>
+			</div>			
+
 			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
 				<div class="panel panel-orange panel-widget">
 					<div class="row no-padding">
@@ -24,7 +29,11 @@
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
 							<div class="large">52</div>
-							<div class="text-muted">Fitment rating</div>
+							<div class="text-muted">Fitment rating &nbsp;
+								<a title="A rank given out of 100 specifying how strongly your shoes fit." class="hint">
+									<span class="glyphicon glyphicon-question-sign" title="More"></span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -37,7 +46,11 @@
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
 							<div class="large">24</div>
-							<div class="text-muted">Distance travelled</div>
+							<div class="text-muted">Distance travelled &nbsp;
+								<a title="Your mileage accumulated thus far." class="hint">
+									<span class="glyphicon glyphicon-question-sign" title="More"></span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -50,7 +63,11 @@
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
 							<div class="large">25.2k</div>
-							<div class="text-muted">Rate of usage</div>
+							<div class="text-muted">Rate of usage &nbsp;
+								<a title="An average rate of impact." class="hint">
+									<span class="glyphicon glyphicon-question-sign" title="More"></span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -60,7 +77,11 @@
 		<div class="row col-no-gutter-container row-margin-top">
 			<div class="col-lg-12 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Recent Activity</div>
+					<div class="panel-heading">Recent Activity &nbsp;
+						<a title="Shows the total number of steps taken over a given week." class="hint">
+							<span class="glyphicon glyphicon-question-sign" title="More"></span>
+						</a>
+					</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
@@ -73,7 +94,11 @@
 		<div class="row row-no-gutter col-no-gutter-container">
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Pressure Output</div>
+					<div class="panel-heading">Pressure Output &nbsp;
+						<a title="Highlights targeted areas of pain." class="hint">
+							<span class="glyphicon glyphicon-question-sign" title="More"></span>
+						</a>
+					</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="chart" id="bar-chart" ></canvas>
@@ -84,7 +109,11 @@
 			
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading">Fitment Rating</div>
+					<div class="panel-heading">Fitment Rating &nbsp;
+						<a title="Highlights your type of pronation." class="hint">
+							<span class="glyphicon glyphicon-question-sign" title="More"></span>
+						</a>
+					</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">
 							<canvas class="chart" id="radar-chart" ></canvas>
@@ -92,46 +121,7 @@
 					</div>
 				</div>
 			</div><!--/.col-->
-		</div><!--/.row-->
-		
-		<div class="row col-no-gutter-container">
-			<div class="col-xs-6 col-md-3 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Remaining Shoe Life</div>
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Rate of Usage</div>
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Distance Travelled This Month</div>
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3 col-no-gutter">
-				<div class="panel panel-default">
-					<div class="panel-heading">Foot Strike</div>
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->											
+		</div><!--/.row-->												
 	</div>	<!--/.main-->
 
 	

@@ -51,27 +51,27 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	var pieData = [
 				{
 					value: 300,
-					color:"#30a5ff",
+					color:"#BF4834",
 					highlight: "#62b9fb",
-					label: "Blue"
+					label: "Toes"
 				},
 				{
 					value: 50,
 					color: "#ffb53e",
-					highlight: "#fac878",
-					label: "Orange"
+					highlight: "#7F3022",
+					label: "Back"
 				},
 				{
 					value: 100,
 					color: "#1ebfae",
-					highlight: "#3cdfce",
-					label: "Teal"
+					highlight: "#FF5F45",
+					label: "Heel"
 				},
 				{
 					value: 120,
 					color: "#f9243f",
-					highlight: "#f6495f",
-					label: "Red"
+					highlight: "#401811",
+					label: "Midfoot"
 				}
 
 			];
@@ -79,27 +79,27 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	var doughnutData = [
 				{
 					value: 300,
-					color:"#30a5ff",
-					highlight: "#62b9fb",
-					label: "Blue"
+					color:"#011C26",
+					highlight: "#011C26",
+					label: "Toes"
 				},
 				{
 					value: 50,
-					color: "#ffb53e",
-					highlight: "#fac878",
-					label: "Orange"
+					color: "#630C00",
+					highlight: "#630C00",
+					label: "Back"
 				},
 				{
 					value: 100,
-					color: "#1ebfae",
-					highlight: "#3cdfce",
-					label: "Teal"
+					color: "#A20064",
+					highlight: "#A20064",
+					label: "Heel"
 				},
 				{
 					value: 120,
-					color: "#f9243f",
-					highlight: "#f6495f",
-					label: "Red"
+					color: "#B7745B",
+					highlight: "#B7745B",
+					label: "Midfoot"
 				}
 			];
 			
@@ -131,26 +131,26 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	var polarData = [
 		    {
 		    	value: 300,
-		    	color:"#30a5ff",
-		    	highlight: "#62b9fb",
-		    	label: "Blue"
+		    	color:"#011C26",
+		    	highlight: "#011C26",
+		    	label: "adsfadfasdfa"
 		    },
 		    {
 		    	value: 140,
-		    	color: "#ffb53e",
-		    	highlight: "#fac878",
+		    	color: "#D9042B",
+		    	highlight: "#D9042B",
 		    	label: "Orange"
 		    },
 		    {
 		    	value: 220,
-		    	color: "#1ebfae",
-		    	highlight: "#3cdfce",
+		    	color: "#F4CB89",
+		    	highlight: "#F4CB89",
 		    	label: "Teal"
 		    },
 		    {
 		    	value: 250,
-		    	color: "#f9243f",
-		    	highlight: "#f6495f",
+		    	color: "#588C8C",
+		    	highlight: "#588C8C",
 		    	label: "Red"
 		    }
 		

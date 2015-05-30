@@ -2,6 +2,9 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var passport = require('passport');
+var session = require('express-session');
 
 //MongoDB
 mongoose.connect('mongodb://localhost/users');
@@ -11,12 +14,12 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-/*
+
 app.use(session({ secret: 'Fito is the best app ever'}));
 app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
-*/
+
 
 //Models
 var users = require('./models/userModel');
@@ -28,6 +31,7 @@ app.use(express.static(__dirname + "/"));
 app.use('/api', require('./routes/api'));
 app.use('/users', require('./routes/users'));
 app.use('/login', require('./routes/login'));
+app.use('/register', require('./routes/register'));
 
 //Start Server
 app.listen(8080);

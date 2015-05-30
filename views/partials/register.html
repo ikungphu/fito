@@ -4,14 +4,14 @@
             <h1>R E G I S T E R</h1> 
             <br />
             <div class="form-group form-group-sm">
-                <input id="username" type="text" class="form-control" placeholder="Enter desired username" aria-describedby="basic-addon1">
+                <input id="username" type="text" class="form-control" placeholder="Enter desired username" aria-describedby="basic-addon1" ng-model="user.username">
                 <br />
-                <input id="password" type="text" class="form-control" placeholder="Enter password" aria-describedby="basic-addon1">
+                <input id="password" type="password" class="form-control" placeholder="Enter password" aria-describedby="basic-addon1" ng-model="user.password">
                 <br />
-                <input id="password" type="text" class="form-control" placeholder="Reenter password" aria-describedby="basic-addon1">
+                <input id="password" type="password" class="form-control" placeholder="Reenter password" aria-describedby="basic-addon1" ng-model="user.password2">
                 <br>
-                <input id="email" type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
-                <a href="all-done.html"><button class="btn btn-default" type="submit">S I G N &nbsp; I N</button></a>
+                <input id="email" type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" ng-model="user.email">
+                <button class="btn btn-default" type="submit" ng-click="register()">S I G N &nbsp; I N</button>
             </div>                    
             <br />
             

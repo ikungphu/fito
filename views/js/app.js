@@ -14,25 +14,32 @@ fitoApp.config(['$routeProvider',
     $routeProvider.
       when('/dashboard', {
         templateUrl: 'partials/dashboard.html',
-        controller: 'dashboardCtrl'
+        controller: 'dashboardCtrl',
+        resolve: {
+          logincheck: checkLogin
+        }
       }).
        when('/diagnostics', {
         templateUrl: 'partials/diagnostics.html',
-        controller: 'diagnosticsCtrl'
+        controller: 'diagnosticsCtrl',
+        resolve: {
+          logincheck: checkLogin
+        }
       }).
        
         when('/shoe-life', {
         templateUrl: 'partials/shoe-life.html',
-        controller: 'shoelifeCtrl'
-      }).
-        
-         when('/recommendations', {
-        templateUrl: 'partials/recommendations.html',
-        controller: 'recommendationsCtrl'
+        controller: 'shoelifeCtrl',
+        resolve: {
+          logincheck: checkLogin
+        }
       }).
           when('/settings', {
         templateUrl: 'partials/settings.html',
-        controller: 'settingsCtrl'
+        controller: 'settingsCtrl',
+        resolve: {
+          logincheck: checkLogin
+        }
       }).
           when('/login', {
         templateUrl: 'partials/login.html',
@@ -46,6 +53,25 @@ fitoApp.config(['$routeProvider',
         redirectTo: '/dashboard'
       });
   }]);
+
+var checkLogin = function($q, $timeout, $http, $location, $rootScope) {
+  var deferred = $q.defer();
+
+  $http.get('/login').success(function(user) {
+    $rootScope.errorMessage = null;
+    //User is authenticated
+    if (user !== '0') {
+      $rootScope.currentUser = user;
+      deferred.resolve();
+    } else {
+      $rootScope.errorMessage = "Please log in to access this page";
+      console.log("Please login to access this page");
+      deferred.reject();
+      $location.url('/login');
+    }
+  });
+  return deferred.promise;
+};
 
 /*
 fitoApp.controller("mainController", function($scope, $http, $location, $rootScope) {

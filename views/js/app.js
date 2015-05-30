@@ -14,32 +14,20 @@ fitoApp.config(['$routeProvider',
     $routeProvider.
       when('/dashboard', {
         templateUrl: 'partials/dashboard.html',
-        controller: 'dashboardCtrl',
-        resolve: {
-          logincheck: checkLogin
-        }
+        controller: 'dashboardCtrl'
       }).
        when('/diagnostics', {
         templateUrl: 'partials/diagnostics.html',
-        controller: 'diagnosticsCtrl',
-        resolve: {
-          logincheck: checkLogin
-        }
+        controller: 'diagnosticsCtrl'
       }).
        
         when('/shoe-life', {
         templateUrl: 'partials/shoe-life.html',
-        controller: 'shoelifeCtrl',
-        resolve: {
-          logincheck: checkLogin
-        }
+        controller: 'shoelifeCtrl'
       }).
           when('/settings', {
         templateUrl: 'partials/settings.html',
-        controller: 'settingsCtrl',
-        resolve: {
-          logincheck: checkLogin
-        }
+        controller: 'settingsCtrl'
       }).
           when('/login', {
         templateUrl: 'partials/login.html',

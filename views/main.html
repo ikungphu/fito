@@ -39,7 +39,7 @@
 
 	<!--Header-->
 	<div>
-		<nav ng-if="dashboard" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<nav ng-if="dashboard" class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="navController">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
@@ -134,7 +134,7 @@
 	                        -->
 	                            <li><a href="#/settings"><i class="fa fa-gear"></i> Settings</a></li>
 	                            <li class="divider"></li>
-	                            <li><a href="signin.html"><i class="fa fa-power-off"></i> Log Out</a></li>
+	                            <li><a ng-click="logout()"><i class="fa fa-power-off"></i> Log Out</a></li>
 
 	                        </ul>
 	                    </li>

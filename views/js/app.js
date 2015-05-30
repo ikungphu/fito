@@ -72,7 +72,15 @@ var checkLogin = function($q, $timeout, $http, $location, $rootScope) {
   });
   return deferred.promise;
 };
+fitoApp.controller("navController", function($scope, $http, $location) {
 
+  $scope.logout = function() {
+    $http.post('/logout').success(function() {
+      $location.url('/login');
+    });
+  };
+
+});
 /*
 fitoApp.controller("mainController", function($scope, $http, $location, $rootScope) {
     alert($location.url());

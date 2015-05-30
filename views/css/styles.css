@@ -952,21 +952,19 @@ h1.page-header {
 
 .easypiechart .percent {
 	display: block;
-	position: absolute;
 	font-size: 26px;
 	top: 38px;
 	width: 120px;
 }
 
 .easypiechart .prestonpercent {
-	display: block;
-	position: absolute;
+	display: block;	
 	font-size: 30px;
 	top: 20px;
 	width: 120px;
 }
 
-#easypiechart-blue .percent { color: #30a5ff;}
+/*#easypiechart-blue .percent { color: #30a5ff;}*/
 #easypiechart-teal .percent { color: #1ebfae;}
 #easypiechart-orange .percent { color: #ffb53e;}
 #easypiechart-red .percent { color: #ef4040;}
@@ -1164,9 +1162,14 @@ tr:hover {
 	color: #444;
 }
 
+
+
+
+
+
 .hint {
     display: inline;
-    position: relative;
+    position: absolute;
 }
 
 .hint:hover:after{
@@ -1192,4 +1195,14 @@ tr:hover {
     left: 50%;
     position: absolute;
     z-index: 99;
+}
+
+.hint-normalized {
+	text-transform: none;
+	font-style: normal;	
+	font-weight: 300;
+} 
+
+a[title]:hover:after {
+	line-height: normal;
 }

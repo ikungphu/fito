@@ -67,11 +67,11 @@
 			</div><!-- /.container-fluid -->
 		</nav><!-- Header-->
 			
-		<div ng-if="dashboard" id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">		
+		<div ng-if="dashboard" id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar" ng-controller="navController">		
 			<ul class="nav menu" style="padding-top: 3em;">
-				<li class="active"><a href="#/dashboard"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-				<li><a href="#/diagnostics"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
-				<li><a href="#/shoe-life"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>
+				<li ng-class="{active: isActive('/dashboard')}"><a href="#/dashboard"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+				<li ng-class="{active: isActive('/diagnostics')}"><a href="#/diagnostics"><span class="glyphicon glyphicon-stats"></span> Diagnostics</a></li>
+				<li ng-class="{active: isActive('/shoe-life')}"><a href="#/shoe-life"><span class="glyphicon glyphicon-hand-up"></span> Shoe Life</a></li>
 			</ul>
 		</div><!--/.sidebar-->
 	</div><!-- main controller -->

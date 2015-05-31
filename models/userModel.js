@@ -3,15 +3,52 @@ var restful = require('node-restful');
 var mongoose = restful.mongoose;
 
 //Schema 
+var textSchema = new mongoose.Schema({
+	title: String,
+	value: String
+});
+var shoeLifeSchema = new mongoose.Schema({
+	remaining: [textSchema],
+	distance: [textSchema],
+	days: [textSchema],
+	rate: [textSchema], 
+	footstrike: String,
+	pressure: String,
+	pronation: String
+});
+
+var diagnosticsSchema = new mongoose.Schema({
+	archTitle: String,
+	archValue: String,
+	dimensions: String,
+	analysis: String,
+	pronationTitle: String,
+	pronationValue: String,
+	diagnosisTitle: String,
+	diagnosisPronation: String,
+	diagnosisDimensions: String 
+});
+
+var dashboardSchema = new mongoose.Schema({
+	steps: String,
+	fitment: String,
+	distance: String,
+	rate: String,
+	recentActivity: String,
+	footStrike: String,
+	pressureOutput: String,
+	fitmentRating: String
+});
+
 var userSchema = new mongoose.Schema({
 	username: String,
 	password: String,
 	email: String,
 	shoe: String,
 	steps: [String],
-	pressure: [String]
-
-
+	dashboard: [dashboardSchema],
+	shoeLife: [shoeLifeSchema],
+	diagnostics: [diagnosticsSchema]
 });
 
 //Return model

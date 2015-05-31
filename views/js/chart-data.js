@@ -80,25 +80,25 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 				{
 					value: 300,
 					color:"#011C26",
-					highlight: "#011C26",
+					highlight: "#ffffff",
 					label: "Toes"
 				},
 				{
 					value: 50,
 					color: "#630C00",
-					highlight: "#630C00",
+					highlight: "#ffffff",
 					label: "Back"
 				},
 				{
 					value: 100,
 					color: "#A20064",
-					highlight: "#A20064",
+					highlight: "#ffffff",
 					label: "Heel"
 				},
 				{
 					value: 120,
 					color: "#B7745B",
-					highlight: "#B7745B",
+					highlight: "#ffffff",
 					label: "Midfoot"
 				}
 			];

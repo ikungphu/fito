@@ -60,6 +60,8 @@ var checkLogin = function($q, $timeout, $http, $location, $rootScope) {
   });
   return deferred.promise;
 };
+
+
 fitoApp.controller("navController", function($scope, $http, $location) {
 
   $scope.logout = function() {
@@ -67,6 +69,13 @@ fitoApp.controller("navController", function($scope, $http, $location) {
       $location.url('/login');
     });
   };
+
+  $scope.isActive = function(route) {
+    console.log(route);
+    console.log($location.path());
+    console.log();
+    return route === $location.path();
+  }
 
 });
 /*

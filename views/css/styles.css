@@ -1206,3 +1206,8 @@ tr:hover {
 a[title]:hover:after {
 	line-height: normal;
 }
+
+.save-changes {
+	margin-right: 10px;
+	float: right;
+}

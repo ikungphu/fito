@@ -18,14 +18,11 @@ var shoeLifeSchema = new mongoose.Schema({
 });
 
 var diagnosticsSchema = new mongoose.Schema({
-	archTitle: String,
-	archValue: String,
+	arch: [textSchema],
 	dimensions: String,
 	analysis: String,
-	pronationTitle: String,
-	pronationValue: String,
-	diagnosisTitle: String,
-	diagnosisPronation: String,
+	pronation: [textSchema],
+	diagnosis: [textSchema],
 	diagnosisDimensions: String 
 });
 

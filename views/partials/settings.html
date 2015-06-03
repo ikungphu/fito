@@ -1,8 +1,12 @@
 ﻿
-<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+<div id="top" class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main" ng-controller="mainController">
     <br>
-    <br>
+    <br>    
     <div class="row container">
+        <div ng-show="savedSettings" class="alert alert-success" role="alert">
+            Successfully saved your account settings.
+          <a href="main.html#/dashboard" class="alert-link">Click here to go back to your dashboard.</a>
+        </div>
         <div class="panel panel-default">
             <div class="panel-heading">Account Information</div>
             <div class="panel-body">
@@ -12,19 +16,14 @@
                     <form role="form">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input class="form-control" placeholder="First Name">
+                            <input class="form-control" placeholder="First Name" ng-model="firstName">
                             <br>
                             <label>Last Name</label>
-                            <input class="form-control" placeholder="Last Name">
+                            <input class="form-control" placeholder="Last Name" ng-model="lastName">
                             <br>
                             <label>Date of Birth</label>
                             <input class="form-control" placeholder="Date of Birth">
                             <br>
-                            <label>Username</label>
-                            <input class="form-control" placeholder="Username">
-                            <br>
-                            <label>Password</label>
-                            <input class="form-control" placeholder="Password">
                         </div>
                     </form>
                 </div>
@@ -85,7 +84,7 @@
                 </div>                        
             </div>                                        
         </div>
-        <button class="btn btn-default" style="float: right">Cancel</button>             
-        <button class="btn btn-default save-changes">Save Changes</button>      
+        <a href="main.html#/dashboard" class="btn btn-default" style="float: right" href="/dashboard">Cancel</button>             
+        <a ng-click="saveChanges()" class="btn btn-default save-changes">Save Changes</button>      
     </div><!-- /.col-->
 </div><!-- /.row -->

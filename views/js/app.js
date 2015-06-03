@@ -71,21 +71,34 @@ fitoApp.controller("navController", function($scope, $http, $location) {
   };
 
   $scope.isActive = function(route) {
-    console.log(route);
-    console.log($location.path());
-    console.log();
     return route === $location.path();
   }
 
 });
-/*
+
+// fitoApp.controller("mainController", function($scope, $http, $location, $rootScope) {
+//     alert($location.url());
+//     //alert(JSON.stringify($location));
+//     if ($location.url() == '/login' || $location.url() == '/register') {
+//         $scope.dashboard = false;
+//     } else {
+//         $scope.dashboard = true;
+//     }
+// });
+
+// added back for user profiles
 fitoApp.controller("mainController", function($scope, $http, $location, $rootScope) {
-    alert($location.url());
-    //alert(JSON.stringify($location));
-    if ($location.url() == '/login' || $location.url() == '/register') {
-        $scope.dashboard = false;
-    } else {
-        $scope.dashboard = true;
-    }
+  $scope.firstName = "";
+  $scope.lastName = "";
+
+  $scope.savedSettings = false;
+
+  $scope.saveChanges = function() {
+    $scope.savedSettings = !$scope.savedSettings;
+    if ($location.path() === '/dashboard') {
+      $scope.savedSettings = false;
+    }    
+    console.log($scope.firstName);
+    console.log($scope.lastName);
+  }
 });
-*/

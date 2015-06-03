@@ -4,16 +4,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 			labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 			datasets : [
 				{
-					label: "My First dataset",
-					fillColor : "rgba(220,220,220,0.2)",
-					strokeColor : "rgba(220,220,220,1)",
-					pointColor : "rgba(220,220,220,1)",
-					pointStrokeColor : "#fff",
-					pointHighlightFill : "#fff",
-					pointHighlightStroke : "rgba(220,220,220,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-				},
-				{
 					label: "My Second dataset",
 					fillColor : "rgba(255, 64, 64, 0.2)",
 					strokeColor : "rgba(255, 64, 64, 1)",
@@ -30,13 +20,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	var barChartData = {
 			labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 			datasets : [
-				{
-					fillColor : "rgba(255,64,64,0.5)",
-					strokeColor : "rgba(255,64,64,0.8)",
-					highlightFill: "rgba(255,64,64,0.75)",
-					highlightStroke: "rgba(255,64,64,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-				},
 				{
 					fillColor : "rgba(220,220,220, 0.2)",
 					strokeColor : "rgba(220,220,220, 0.8)",
@@ -106,16 +89,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	var radarData = {
 	    labels: ["Normal Pronation", "Underpronation", "Over Pronation"],
 	    datasets: [
-	        {
-	            label: "My First dataset",
-	            fillColor: "rgba(220,220,220,0.2)",
-	            strokeColor: "rgba(220,220,220,1)",
-	            pointColor: "rgba(220,220,220,1)",
-	            pointStrokeColor: "#fff",
-	            pointHighlightFill: "#fff",
-	            pointHighlightStroke: "rgba(220,220,220,1)",
-	            data: [65, 90, 57]
-	        },
 	        {
 	            label: "My Second dataset",
 	            fillColor : "rgba(255, 64, 64, 0.2)",

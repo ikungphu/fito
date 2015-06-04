@@ -1,7 +1,7 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
 		<br>
 		<br>		
-		
+		<h1 ng-bind="test"></h1>
 		<div class="row col-no-gutter-container">
 			<div class="col-xs-12 col-md-6 col-lg-3 col-no-gutter">
 				<div class="panel panel-blue panel-widget">
@@ -10,7 +10,7 @@
 							<em class="glyphicon glyphicon-shopping-cart glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
+							<div ng-bind="steps" class="large">120</div>
 							<div class="text-muted">Steps taken &nbsp;
 								<a title="Reports the total number of steps taken so far." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -28,7 +28,7 @@
 							<em class="glyphicon glyphicon-comment glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52</div>
+							<div ng-bind="fitment" class="large">52</div>
 							<div class="text-muted">Fitment rating &nbsp;
 								<a title="Reports your rank given out of 100 specifying how strongly your shoes fit." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -45,7 +45,7 @@
 							<em class="glyphicon glyphicon-user glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
+							<div ng-bind="distance" class="large">24</div>
 							<div class="text-muted">Distance travelled &nbsp;
 								<a title="Reports your current mileage on your shoes." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -62,7 +62,7 @@
 							<em class="glyphicon glyphicon-stats glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
+							<div ng-bind="rate" class="large">25.2k</div>
 							<div class="text-muted">Rate of usage &nbsp;
 								<a title="Reports your average rate of impact on landing." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>

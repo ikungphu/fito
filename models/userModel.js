@@ -19,8 +19,8 @@ var shoeLifeSchema = new mongoose.Schema({
 
 var diagnosticsSchema = new mongoose.Schema({
 	arch: [textSchema],
-	dimensions: String,
-	analysis: String,
+	dimensions: [textSchema],
+	analysis: [textSchema],
 	pronation: [textSchema],
 	diagnosis: [textSchema],
 	diagnosisDimensions: String 

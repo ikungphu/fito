@@ -82,11 +82,12 @@ var checkLogin = function($q, $timeout, $http, $location, $rootScope) {
 };
 
 
-fitoApp.controller("navController", function($scope, $http, $location) {
+fitoApp.controller("navController", function($scope, $http, $location, $rootScope) {
 
   $scope.logout = function() {
     $http.post('/logout').success(function() {
       $location.url('/login');
+      $rootScope.currentUser = false;
     });
   };
 

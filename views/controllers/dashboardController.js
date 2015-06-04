@@ -7,7 +7,7 @@ dashboardController.controller('dashboardCtrl', ['$scope', '$http', '$rootScope'
 
     $rootScope.dashboard = true;
 
-    console.log("Current user is " + $rootScope.currentUser.username);
+    //console.log("Current user is " + $rootScope.currentUser.username);
     $scope.steps = "";
     $scope.fitment= "";
     $scope.distance = "";
@@ -31,6 +31,7 @@ dashboardController.controller('dashboardCtrl', ['$scope', '$http', '$rootScope'
 	    $scope.footStrike = userData['footStrike'];
 	    $scope.pressureOutput = userData['pressureOutput'];
 	    $scope.fitmentRating = userData['fitmentRating'];
+	    $scope.pronation = userData['pronation'];
     });
   
   	var chart1 = document.getElementById("line-chart").getContext("2d");

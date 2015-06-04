@@ -31,6 +31,7 @@ var dashboardSchema = new mongoose.Schema({
 	fitment: String,
 	distance: String,
 	rate: String,
+	pronation: String,
 	recentActivity: String,
 	footStrike: String,
 	pressureOutput: String,

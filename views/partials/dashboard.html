@@ -10,7 +10,7 @@
 							<em class="glyphicon glyphicon-transfer glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">120</div>
+							<div ng-bind="steps" class="large">120</div>
 							<div class="text-muted">Steps taken &nbsp;
 								<a title="Reports the total number of steps taken so far since you last installed your sensors." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -28,7 +28,7 @@
 							<em class="glyphicon glyphicon-star glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">52</div>
+							<div ng-bind="fitment" class="large">52</div>
 							<div class="text-muted">Fitment rating &nbsp;
 								<a title="Reports your rank given out of 100 specifying how strongly your shoes fit. The higher the score, the better." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -45,8 +45,8 @@
 							<em class="glyphicon glyphicon-road glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">24</div>
-							<div class="text-muted">Distance travelled &nbsp;
+							<div ng-bind="distance" class="large">24</div>
+							<div class="text-muted">Distance &nbsp;
 								<a title="Reports your current mileage on your shoes since you last installed your sensors." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
 								</a>
@@ -62,7 +62,7 @@
 							<em class="glyphicon glyphicon-signal glyphicon-l"></em>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">25.2k</div>
+							<div ng-bind="rate" class="large">25.2k</div>
 							<div class="text-muted">Rate of usage &nbsp;
 								<a title="Reports your average rate of impact on landing." class="hint">
 									<span class="glyphicon glyphicon-question-sign" title="More"></span>
@@ -98,7 +98,7 @@
 						<a title="Highlights targeted areas of pain." class="hint hint-normalized">
 							<span class="glyphicon glyphicon-question-sign" title="More"></span>
 						</a>
-						<div style="display: inline; float: right; font-size: 16px; color: red" >63% Under Pronated</div>
+						<div ng-bind="pronation" style="display: inline; float: right; font-size: 16px; color: red" >63% Under Pronated</div>
 					</div>
 					<div class="panel-body">
 						<div class="canvas-wrapper">

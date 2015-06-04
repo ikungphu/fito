@@ -12,8 +12,8 @@
 					</div>
 					<div class="panel-body easypiechart-panel">
 						<div class="easypiechart" id="easypiechart-blue" data-percent="80" >							
-							<span class="percent">80%</span>
-								<p>Your shoe is in great condition. No problems with wear and tear.</p>
+							<span class="percent" ng-bind="remainingTitle">80%</span>
+								<p ng-bind="remainingValue">Your shoe is in great condition. No problems with wear and tear.</p>
 
 						</div>						
 					</div>
@@ -28,8 +28,8 @@
 					</div>
 					<div class="panel-body easypiechart-panel">
 						<div class="easypiechart" id="easypiechart-orange" data-percent="0">
-							<span class="prestonpercent">99 miles</span>
-							<p>Keep up your mileage. You are 10% above the national average.</p>
+							<span class="prestonpercent" ng-bind="distanceTitle">99 miles</span>
+							<p ng-bind="distanceValue">Keep up your mileage. You are 10% above the national average.</p>
 						</div>
 					</div>
 				</div>
@@ -43,8 +43,8 @@
 					</div>
 					<div class="panel-body easypiechart-panel">
 						<div class="easypiechart" id="easypiechart-teal" data-percent="0" >
-							<span class="prestonpercent">29 days</span>
-							<p>Consider replacing your shoes in 50 days for optimal performance.</p>
+							<span class="prestonpercent" ng-bind="daysTitle">29 days</span>
+							<p ng-bind="daysValue">Consider replacing your shoes in 50 days for optimal performance.</p>
 						</div>
 					</div>
 				</div>
@@ -58,8 +58,8 @@
 					</div>
 					<div class="panel-body easypiechart-panel">
 						<div class="easypiechart" id="easypiechart-red" data-percent="0" >
-							<span class="prestonpercent">3.4 miles/day</span>
-							<p>No significant data here to display.</p>
+							<span class="prestonpercent" ng-bind="rateTitle">3.4 miles/day</span>
+							<p ng-bind="rateValue">No significant data here to display.</p>
 						</div>
 					</div>
 				</div>

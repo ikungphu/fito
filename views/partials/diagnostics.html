@@ -11,8 +11,8 @@
 					</div>
 					<div class="panel-body">
 						<div class="col-md-4">
-                            <h3>Flat Footed</h3>	
-                            <p>Your arch is either very shallow or completely flat.
+                            <h3 ng-bind="archTitle">Flat Footed</h3>	
+                            <p ng-bind="archValue">Your arch is either very shallow or completely flat.
                              Walking without proper arch support can result in a weakened posture and discomfort in your hips and back.</p>
                              <center>
                              	<div><img src="img/foot-hardcoded.png"></div>
@@ -20,12 +20,12 @@
 						</div>
 						<div class="col-md-4">
                             <h3>Foot Dimension Analysis</h3>
-                            <p>Length: 8.9 inches</p>
-                            <p>Width: 4.5 inches</p>                            
+                            <p ng-bind="dimensionsTitle">Length: 8.9 inches</p>
+                            <p ng-bind="dimensionsValue">Width: 4.5 inches</p>                            
 						</div>
                         <div class="col-md-4">
-                            <h3>Dimensional Analysis</h3> 
-                            <p>Your feet length to width ratio is <strong>proportionally</strong> accurate to that of a <strong>flat-footed</strong> archetype. 
+                            <h3 ng-bind="analysisTitle">Dimensional Analysis</h3> 
+                            <p ng-bind="analysisValue">Your feet length to width ratio is <strong>proportionally</strong> accurate to that of a <strong>flat-footed</strong> archetype. 
                             Information from the pressure sensors indicate that you are <strong>over-utilizing</strong> the <strong>toe box</strong> area in the shoe. 
                             <strong>Wider shoes</strong> are recommended to accommodate the <strong>width</strong> of your feet.</p>                                                     
                         </div>
@@ -47,8 +47,8 @@
 							<img src="img/supination.png" style="width: 50%; height: 50%;">
 						</div>
 						<div class="container-fluid col-md-8">
-                            <h3>Underpronation</h3>
-                            <p>The <strong>outer or lateral</strong> side of your <strong>heels</strong> takes on the vast majority of shock during regular use. 
+                            <h3 ng-bind="pronationTitle">Underpronation</h3>
+                            <p ng-bind="pronationValue">The <strong>outer or lateral</strong> side of your <strong>heels</strong> takes on the vast majority of shock during regular use. 
                             This type of pronation delivers a <strong>large mount of shock to your lower leg</strong> and affects <strong>running efficiency</strong>.</p>
 						</div>						
 					</div>
@@ -65,11 +65,11 @@
 					<div class="panel-body">
 						<div class="container-fluid">
                             <h3>Comfort Level 1</h3>                            
-                            <p>Pronation: Use a shoe with outer stability
-                            	<br>
-                            	Foot dimensions: Feet align closely with the standard men's size 9.
-                            	<br>
-                            	(Insert one more line here)
+                            <p ng-bind="diagnosisDimensions1">Pronation: Use a shoe with outer stability</p>
+                            	
+                            	<p ng-bind="diagnosisDimensions2">Foot dimensions: Feet align closely with the standard men's size 9.</p>
+                            	
+                            	<p ng-bind="diagnosisDimensions3"></p>
                             </p>                            
 						</div>
 					</div>

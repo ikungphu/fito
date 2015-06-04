@@ -1,6 +1,8 @@
 var randomScalingFactor = function(){ return Math.round(Math.random()*10)};
 	
-	var lineChartData = {
+
+//Under Pronated User
+	var underLineChartData = {
 			labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
 			datasets : [
 				{
@@ -86,7 +88,7 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*10)};
 				}
 			];
 			
-	var radarData = {
+	var underRadarData = {
 	    labels: ["Normal Pronation", "Under Pronation", "Over Pronation"],
 	    datasets: [
 	        {
@@ -128,3 +130,39 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*10)};
 		    }
 		
 	];
+
+
+	// Normal Pronated user
+
+var normalLineChartData = {
+			labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+			datasets : [
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(255, 64, 64, 0.2)",
+					strokeColor : "rgba(255, 64, 64, 1)",
+					pointColor : "rgba(255, 64, 64, 1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(48, 164, 255, 1)",
+					data : [4956,8739,4798,6055,9573,5384,9077]
+				}
+			]
+
+		}
+
+var normalRadarData = {
+	    labels: ["Normal Pronation", "Under Pronation", "Over Pronation"],
+	    datasets: [
+	        {
+	            label: "My Second dataset",
+	            fillColor : "rgba(255, 64, 64, 0.2)",
+	            strokeColor : "rgba(255, 64, 64, 0.8)",
+	            pointColor : "rgba(255, 64, 64, 1)",
+	            pointStrokeColor : "#fff",
+	            pointHighlightFill : "#fff",
+	            pointHighlightStroke : "rgba(48, 164, 255, 1)",
+	            data: [88, 2, 10]
+	        }
+	    ]
+	};

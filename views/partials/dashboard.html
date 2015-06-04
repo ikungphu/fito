@@ -94,13 +94,13 @@
 		<div class="row row-no-gutter col-no-gutter-container">
 			<div class="col-md-6 col-no-gutter">
 				<div class="panel panel-default">
-					<div class="panel-heading" style="position: relative">Pronation Rating &nbsp;
+					<div class="panel-heading" style="position: relative;">Pronation Rating &nbsp;
 						<a title="Highlights targeted areas of pain." class="hint hint-normalized">
 							<span class="glyphicon glyphicon-question-sign" title="More"></span>
 						</a>
 						<div ng-bind="pronation" style="display: inline; float: right; font-size: 16px; color: red" >63% Under Pronated</div>
 					</div>
-					<div class="panel-body">
+					<div class="panel-body" style="height: 250px;">
 						<div class="canvas-wrapper">
 							<canvas class="chart" id="radar-chart" ></canvas>
 						</div>
@@ -115,28 +115,10 @@
 							<span class="glyphicon glyphicon-question-sign" title="More"></span>
 						</a>
 					</div>					
-					<div class="panel-body">
+					<div class="panel-body" style="height: 250px;">
 						<div>
 							<!-- <canvas class="chart" id="bar-chart" ></canvas> -->							
-							<center>
-								<div id="goodfoot" style="margin-top: 6%; margin-bottom: 10%">
-									<p>Normal Pressure Distribution</p>
-									<img src="img/foot-good.png" usemap="#heatmap">
-								</div>
-								<div id="badfoot" style="margin-top: 6%; margin-bottom: 10%">
-									<p>Flat Footed Pressure Distribution</p>
-									<img src="img/foot-bad.png" usemap="#heatmap">
-									<p></p>
-									<p></p>
-								</div>
-								
-								
-								<!-- <map name="heatmap">
-								  <area shape="rect" coords="0,0,266,256" href="#" alt="Sun">
-								  <area shape="rect" coords="0,266,368,256" href="#" alt="Mercury">
-								  <area shape="rect" coords="0,375,58,8" href="#" alt="Venus">
-								</map>				 -->
-							</center>							
+														
 						</div>
 					</div>
 				</div>

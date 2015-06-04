@@ -4,6 +4,7 @@ var diagnosticsController = angular.module('diagnosticsController', []);
 diagnosticsController.controller('diagnosticsCtrl', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
   
 	$rootScope.dashboard = true;
+	$scope.status = "";
 
 	$http.get('http://teamfito.me/api/users?username=' + $rootScope.currentUser.username).success(function(response) {
 		userData = response[0]['diagnostics'][0];
@@ -20,6 +21,7 @@ diagnosticsController.controller('diagnosticsCtrl', ['$scope', '$http', '$rootSc
 		$scope.diagnosisTitle = response[0]['diagnostics'][0]['diagnosis'][0]['title'];
 		$scope.diagnosisValue = response[0]['diagnostics'][0]['diagnosis'][0]['value'];
 		$scope.diagnosisDimensions = response[0]['diagnostics'][0]['diagnosisDimensions'];
+		$scope.status = response['status'];
 
 		var arr = $scope.diagnosisDimensions.split("|");
 		$scope.diagnosisDimensions1 = arr[0];

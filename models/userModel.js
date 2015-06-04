@@ -42,6 +42,7 @@ var userSchema = new mongoose.Schema({
 	username: String,
 	password: String,
 	email: String,
+	status: String,
 	shoe: String,
 	steps: [String],
 	dashboard: [dashboardSchema],

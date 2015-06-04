@@ -1,4 +1,4 @@
-var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
+var randomScalingFactor = function(){ return Math.round(Math.random()*10)};
 	
 	var lineChartData = {
 			labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -11,7 +11,7 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 					pointStrokeColor : "#fff",
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(48, 164, 255, 1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+					data : [8282,6795,7192,4611,6964,9043,5535]
 				}
 			]
 
@@ -87,7 +87,7 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 			];
 			
 	var radarData = {
-	    labels: ["Normal Pronation", "Underpronation", "Over Pronation"],
+	    labels: ["Normal Pronation", "Under Pronation", "Over Pronation"],
 	    datasets: [
 	        {
 	            label: "My Second dataset",
@@ -97,7 +97,7 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 	            pointStrokeColor : "#fff",
 	            pointHighlightFill : "#fff",
 	            pointHighlightStroke : "rgba(48, 164, 255, 1)",
-	            data: [28, 100, 40]
+	            data: [25, 63, 12]
 	        }
 	    ]
 	};
